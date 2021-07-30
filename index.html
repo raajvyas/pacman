@@ -6,7 +6,7 @@
         ['pacman3.png', 'pacman4.png']
     ];
     var direction = 0;
-    const pacmen = [];
+    const pacMen = [];
     var myVar;
 
     function setToRandom(scale) {
@@ -34,7 +34,7 @@
     }
     
     function update() {
-        pacmen.forEach((item) => {
+        pacMen.forEach((item) => {
             checkCollisions(item)
             item.position.x += item.velocity.x;
             item.position.y += item.velocity.y;
@@ -53,7 +53,7 @@
     }
 
     function makeOne() {
-        pacmen.push(makePac());
+        pacMen.push(makePac());
     }
 
     function pause() {
